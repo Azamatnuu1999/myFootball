@@ -1,0 +1,40 @@
+.addMatch {
+    width: 80%;
+    min-width: 360px;
+    border: 3px solid var(--primary-bg-color);
+    margin: 70px auto;
+    text-align: left;
+    padding: 1px;
+    box-shadow: 0 0 5px grey;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 5px;
+    align-items: center;
+}
+
+form nz-select, form nz-time-picker, form input, form nz-date-picker, form label {
+    width: 50%;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    background-color: var(--primary-bg-color);
+    padding: 5px 0;
+}
+
+.btn {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn button {
+    background-color: var(--primary-bg-color);
+}
+
+.btn span {
+    color: var(--primary-color);
+}

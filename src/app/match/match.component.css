@@ -1,0 +1,60 @@
+.main {
+    margin: 20px 5%;
+    border-left: 2px solid var(--primary-bg-color);
+    border-right: 2px solid var(--primary-bg-color);
+    text-align: center;
+    padding: 0 10px;
+    min-height: 80vh;
+}
+
+.matchLine {
+    margin: 10px 5px;
+    background-color: rgb(216, 215, 215);
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 4px;
+    padding: 3px;
+    background-color: var(--secondary-color);
+}
+
+.match div {
+    display: flex;
+    justify-content: space-between;
+    width: 48%;
+    color: white;
+}
+
+.match data {
+    padding: 1px;
+}
+
+.match p {
+    margin-bottom: 0;
+}
+
+.goals {
+    background-color: #8dc1f4;
+    padding: 3px 5px;
+}
+
+.data p {
+    font-size: 12px;
+}
+
+.clubName {
+    padding: 0 5px;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    background-color: #56a4f3;
+    border: none;
+    padding: 5px 6px;
+    border-radius: 2px;
+}

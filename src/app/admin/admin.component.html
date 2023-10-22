@@ -1,0 +1,56 @@
+<!-- ////////////////// -->
+<div class="addMatch">
+    <form [formGroup]="form">
+        <h3>{{isEdit ? 'Edit' : 'Enter new'}} match</h3>
+        <div>
+            <label for="clubName1">
+                1. First club name
+            </label>
+            <nz-select
+            formControlName="clubName1">
+                <nz-option *ngFor="let club of clubs" [nzValue]="club" [nzLabel]="club"></nz-option>
+            </nz-select>
+        </div>
+        <div *ngIf="isEdit">
+            <label for="clubGoals1">
+                2.1. First club goals
+            </label>
+            <input nz-input id="clubGoals1"
+            type="number" placeholder="Enter goals" formControlName="clubGoals1" />
+        </div>
+        <div>
+            <label for="clubName2">
+                2. Second club name
+            </label>
+            <nz-select formControlName="clubName2">
+                <nz-option *ngFor="let club of clubs" [nzValue]="club" [nzLabel]="club"></nz-option>
+            </nz-select>
+        </div>
+        <div *ngIf="isEdit">
+            <label for="clubGoals2">
+                2.1. Second club goals
+            </label>
+            <input nz-input
+            type="number" 
+            id="clubGoals2" placeholder="Enter goals" formControlName="clubGoals2" />
+        </div>
+        <div>
+            <label for="date">
+                3. Enter match date
+            </label>
+            <nz-date-picker formControlName="date"></nz-date-picker>
+        </div>
+        <div>
+            <label for="hour">
+                4. Enter match hour
+            </label>
+            <nz-time-picker formControlName="hour"
+            nzFormat="HH:mm"></nz-time-picker>
+        </div>
+    </form>
+    <div class="btn">
+        <button nz-button (click)="addMatch()"><span>
+            {{isEdit ? 'Edit match' : 'Add match'}}
+        </span></button>
+    </div>
+</div>

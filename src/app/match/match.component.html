@@ -1,0 +1,27 @@
+<div class="main">
+    <h1>All matches</h1>
+    <!-- All matches data -->
+    <div class="matchLine" *ngFor="let match of matches, let i = index">
+        <div class="match" (click)="editMatch(i + 1)">
+            <div>
+                <p class="clubName">
+                    {{match.clubName1}}
+                </p>
+                <p class="goals">
+                    {{match.clubGoals1 ? match.clubGoals1 : '-'}}
+                </p>
+            </div>
+            <div>
+                <p class="goals">
+                    {{match.clubGoals2 ? match.clubGoals2 : '-'}} 
+                </p>
+                <p class="clubName">
+                    {{match.clubName2}}
+                </p>
+            </div>
+        </div>
+        <div class="data">
+            <p>Date: {{match.date | date:'mediumDate' }} Hour: {{match.hour | date:'shortTime'}}</p>
+        </div>
+    </div>
+</div>

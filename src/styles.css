@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+
+/* Global colors */
+:root {
+    --primary-color: #ffffff;
+    --primary-bg-color: #1976d2;
+    --secondary-color: #4b9ef1;
+    --secondary-bg-color: #173553;
+    --table-color: #4b9ef1;
+}
